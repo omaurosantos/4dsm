@@ -6,12 +6,17 @@ import Tres from './src/screens/Tres';
 import Quatro from './src/screens/Quatro';
 import Cinco from './src/screens/Cinco';
 import Seis from './src/screens/Seis';
+import Sete from './src/screens/Sete';
+import Oito from './src/screens/Oito';
+import Nove from './src/screens/Nove';
+import Dez from './src/screens/Dez';
+import Onze from './src/screens/Onze';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.customText}>Exercício 6</Text>
-      <Seis />
+      <Text style={styles.customText}>Exercício 11</Text>
+      <Onze />
     </View>
   );
 }
