@@ -1,0 +1,52 @@
+RELATÓRIO ESTATÍSTICO - TEMPERATURA MÉDIA
+
+1. Média, Moda e Mediana:
+   - Média: 18.10°C
+   - Moda: 21.00°C
+   - Mediana: 18.00°C
+
+   * A média indica a temperatura média registrada. 
+   * A moda mostra o valor que mais se repetiu.
+   * A mediana representa o ponto central dos dados.
+
+2. Variância e Desvio Padrão:
+   - Variância: 9.16
+   - Desvio Padrão: 3.03
+
+   * A variância mede o quanto os dados se espalham em torno da média.
+   * O desvio padrão indica a dispersão dos valores em relação à média.
+
+3. Quartis:
+   - 1º Quartil (Q1): 16.00°C
+   - 2º Quartil (Mediana/Q2): 18.00°C
+   - 3º Quartil (Q3): 20.00°C
+
+   * Q1: 25% dos dados estão abaixo deste valor.
+   * Q2: Mediana, ou ponto central dos dados.
+   * Q3: 75% dos dados estão abaixo deste valor.
+
+4. Percentis 5 e 95:
+   - Percentil 5: 13.00°C
+   - Percentil 95: 23.00°C
+
+   * O percentil 5 representa o limite inferior dos dados, excluindo valores extremos.
+   * O percentil 95 mostra a faixa superior da distribuição.
+
+5. Outliers Identificados:
+   - Limite Inferior: 10.00°C
+   - Limite Superior: 26.00°C
+   - Número de Outliers: 1
+
+   * Outliers são valores que se distanciam muito do restante dos dados.
+   * Esses valores podem ser erros ou eventos climáticos atípicos.
+
+6. Análise do Box Plot:
+   - A linha dentro da caixa representa a mediana.
+   - As extremidades da caixa representam Q1 e Q3.
+   - Os "bigodes" mostram o intervalo sem outliers.
+   - Pontos fora dos "bigodes" são outliers.
+
+   * Se a mediana estiver mais próxima do Q1 ou Q3, indica assimetria na distribuição.
+   * A presença de muitos outliers pode indicar anomalias nos dados.
+
+Gráfico de Box Plot salvo como 'boxplot_temperatura.png'.
