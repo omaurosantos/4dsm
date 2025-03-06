@@ -63,7 +63,7 @@ export default function Main() {
               padding: 0,
               listStyle: "none",
               overflow: "auto",
-              maxHeight: 150
+              maxHeight: 150,
             }}
           >
             {regioes?.map((item:RegiaoProps, i:number) => (
