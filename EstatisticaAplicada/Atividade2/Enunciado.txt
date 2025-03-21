@@ -1,0 +1,10 @@
+Fornecer uma tabela de distribuição de frequência para os dados contínuos de temperatura que estão no csv na pasta arquivos do canal geral. Para isso, utilize:
+1) o número de classes dado pela fórmula i = 1 + 3.3*log n
+2) o tamanho das classes dado pela fórmula h = AT/i
+3) Baseado na tabela de distribuição de frequência responda: 
+
+a) Em qual porcentagem do tempo a temperatura tem até 20,5°C?
+b) Qual a faixa de temperatura mais frequente?
+c) Com base na sua tabela de distribuição de frequência, calcule a temperatura média e mediana. 
+
+Adicione o script em Python e um documento em Word com suas respostas e a tabela de distribuição de frequências.

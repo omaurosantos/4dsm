@@ -1,0 +1,21 @@
+{
+  "expo": {
+    "name": "exercicios",
+    "slug": "exercicios",
+    "version": "1.0.0",
+    "newArchEnabled": true,
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "newArchEnabled": true
+          },
+          "ios": {
+            "newArchEnabled": true
+          }
+        }
+      ]
+    ]
+  }
+}

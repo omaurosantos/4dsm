@@ -1,15 +1,22 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { StyleSheet, Text, View } from 'react-native';
-import Um from './src/screens/Um';
+import Cinco from './src/screens/Cinco';
+import Seis from './src/screens/Seis';
+import Sete from './src/screens/Sete';
+import Oito from './src/screens/Oito';
+import Sms from './src/screens/Sms';
+import Whatsapp from './src/screens/Whatsapp';
+import Mail from './src/screens/Email';
+import Maps from './src/screens/Maps';
 
 const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Um">
-        <Stack.Screen name="Um" component={Um} />
+      <Stack.Navigator initialRouteName="Maps">
+        <Stack.Screen name="Maps" component={Maps} />
       </Stack.Navigator>
     </NavigationContainer>
   );
