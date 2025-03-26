@@ -12,6 +12,7 @@ Este projeto processa um arquivo CSV contendo medições de temperatura e gera u
 ### 1️⃣ Clonar o repositório
 ```bash
 git clone https://github.com/omaurosantos/4dsm.git
+cd 4dsm
 cd EstatisticaAplicada
 cd Atividade2
 ```
