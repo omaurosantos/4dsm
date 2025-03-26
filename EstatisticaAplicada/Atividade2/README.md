@@ -2,6 +2,19 @@
 
 Este projeto processa um arquivo CSV contendo medições de temperatura e gera uma tabela de distribuição de frequência, além de responder algumas perguntas estatísticas.
 
+## Enunciado
+Fornecer uma tabela de distribuição de frequência para os dados contínuos de temperatura que estão no CSV na pasta arquivos do canal geral. Para isso, utilize:
+
+- O número de classes dado pela fórmula i = 1 + 3.3*log n
+
+- O tamanho das classes dado pela fórmula h = AT/i
+
+Baseado na tabela de distribuição de frequência, responda:
+
+- a) Em qual porcentagem do tempo a temperatura tem até 20,5°C? 
+- b) Qual a faixa de temperatura mais frequente? 
+- c) Com base na sua tabela de distribuição de frequência, calcule a temperatura média e mediana.
+
 ## 📂 Estrutura do Projeto
 - `dados.csv` → Arquivo de entrada com os dados de temperatura.
 - `code.py` → Código que processa o CSV e gera os resultados.
