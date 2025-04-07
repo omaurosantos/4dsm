@@ -1,2 +1,9 @@
 IntegracaoEntregaContinua/Atividade-2---IEC
 IntegracaoEntregaContinua/Atividade3-IEC/
+
+
+*.zip
+*.mp4
+*.exe
+node_modules/
+dist/
