@@ -1,0 +1,24 @@
+# Ignorar o arquivo com credenciais
+config_mauro.py
+
+# Ignorar arquivos compilados do Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignorar arquivos de log e de execução
+*.log
+
+# Ignorar ambientes virtuais
+env/
+venv/
+.venv/
+
+# Ignorar arquivos de backup e temporários
+*.bak
+*.tmp
+*.swp
+.DS_Store
+
+# Ignorar arquivos do VSCode
+.vscode/
