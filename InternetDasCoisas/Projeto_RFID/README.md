@@ -51,11 +51,14 @@ As **credenciais do banco de dados PostgreSQL** são armazenadas em um arquivo s
 ## 📂 Estrutura do Projeto
 
 📁 projeto-rfid
-├── 📄 main.py # Código Python que conecta ao Arduino e insere dados no banco
-├── 📄 config.py # (IGNORADO PELO GIT) Credenciais do banco
-├── 📄 leitor_rfid.ino # Código Arduino que faz leitura do cartão e senha
-├── 📄 .gitignore # Arquivos a serem ignorados pelo Git
-└── 📄 README.md # Este documento
+
+├── 📁 src
+
+│   ├── 📄 main.py          → Código Python que conecta ao Arduino e insere dados no banco
+│   ├── 📄 config.py        → (IGNORADO PELO GIT) Credenciais do banco
+│   ├── 📄 leitor_rfid.ino  → Código Arduino que faz leitura do cartão e senha
+│   └── 📄 .gitignore       → Arquivos a serem ignorados pelo Git
+└── 📄 README.md            → Este documento
 
 ---
 
@@ -66,4 +69,5 @@ As **credenciais do banco de dados PostgreSQL** são armazenadas em um arquivo s
 |Mauro do Prado Santos|[![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/omaurosantos)| [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/mauro-do-prado-santos-350b2720a/) |
 
 Disciplina: Internet das Coisas (IoT)
+
 Professor: Henrique Duarte Borges Louro
