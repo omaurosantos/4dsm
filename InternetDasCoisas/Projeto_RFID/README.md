@@ -54,7 +54,7 @@ As **credenciais do banco de dados PostgreSQL** são armazenadas em um arquivo s
 
 ├── 📁 src <br>
 │   ├── 📄 main.py          → Código Python que conecta ao Arduino e insere dados no banco <br>
-│   ├── 📄 config.py        → (IGNORADO PELO GIT) Credenciais do banco <br>
+│   ├── 📄 config.py        → Credenciais do banco <br>
 │   ├── 📄 leitor_rfid.ino  → Código Arduino que faz leitura do cartão e senha <br>
 │   └── 📄 .gitignore       → Arquivos a serem ignorados pelo Git <br>
 └── 📄 README.md            → Este documento
