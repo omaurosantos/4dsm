@@ -67,6 +67,5 @@ As **credenciais do banco de dados PostgreSQL** são armazenadas em um arquivo s
 |André Flávio de Olivera|[![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/andreflavio)| [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/andr%C3%A9fl%C3%A1vio/)|
 |Mauro do Prado Santos|[![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/omaurosantos)| [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/mauro-do-prado-santos-350b2720a/) |
 
-Disciplina: Internet das Coisas (IoT)
-
-Professor: Henrique Duarte Borges Louro
+Disciplina: Internet das Coisas (IoT) <br>
+Professor: <a href="https://github.com/hdblouro"> Henrique Duarte Borges Louro</a>
