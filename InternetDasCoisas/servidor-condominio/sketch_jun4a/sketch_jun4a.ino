@@ -73,7 +73,7 @@ void conectarWiFi() {
 
 // Função para enviar dados ao servidor via HTTP POST
 void enviarDadosHTTP(String dados) {
-  String ip = "192.168.86.250";  // IP do servidor - ajuste para o seu
+  String ip = "seu ip";  // IP do servidor - ajuste para o seu
   int porta = 3000;               // Porta do servidor - ajuste se necessário
 
   String cmd = "AT+CIPSTART=\"TCP\",\"" + ip + "\"," + String(porta);
