@@ -1,0 +1,38 @@
+name: Node.js CI # Nome do Workflow
+
+on: # Define o gatilho para a execução do workflow
+  push: # Será executado em todo push
+    branches: [ main, develop ] # Especificamente para as branches main e develop
+  pull_request: # E também em toda abertura de Pull Request
+    branches: [ main, develop ] # Contra as branches main e develop
+
+jobs: # Define os trabalhos a serem executados
+  build: # Nome do job
+    runs-on: ubuntu-latest # Define o sistema operacional do ambiente de execução
+
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x] # Define uma matriz para testar em múltiplas versões do Node.js
+
+    steps: # Sequência de passos a serem executados no job
+      - name: 1. Checkout do repositório # Descrição do passo
+        uses: actions/checkout@v4 # Usa a Action "checkout" para baixar o código do repositório
+
+      - name: 2. Configuração do Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4 # Usa a Action "setup-node" para instalar o Node.js
+        with:
+          node-version: ${{ matrix.node-version }} # Usa a versão da matriz
+          cache: 'npm' # Habilita o cache de dependências para agilizar execuções futuras
+
+      - name: 3. Instalação de dependências
+        run: npm ci # Usa "npm ci" que é mais rápido e seguro para ambientes de CI do que "npm install"
+
+      - name: 4. Execução dos testes automatizados
+        run: npm test # Roda o comando definido no package.json para os testes
+
+      - name: 5. Notificação de falha (Exemplo com Slack/Discord)
+        if: failure() # Este passo só executa se algum dos passos anteriores falhar
+        run: |
+          # Aqui você adicionaria um script para enviar uma notificação
+          # Ex: curl -X POST -H 'Content-type: application/json' --data '{"text":"O build falhou na branch ${{ github.ref_name }}!"}' ${{ secrets.SLACK_WEBHOOK_URL }}
+          echo "Build falhou! Notificação enviada."

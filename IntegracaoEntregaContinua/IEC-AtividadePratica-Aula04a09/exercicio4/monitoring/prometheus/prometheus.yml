@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'pixeltrack-app'
+    static_configs:
+      - targets: ['app:3001'] # 'app' é o nome do serviço no Docker Compose, e 3001 a porta da aplicação

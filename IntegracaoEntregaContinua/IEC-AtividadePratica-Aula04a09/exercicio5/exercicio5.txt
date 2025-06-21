@@ -1,0 +1,33 @@
+Passos de Configuração
+Inicializar o Firebase no Projeto:
+
+Instale o Firebase CLI: npm install -g firebase-tools.
+Faça login: firebase login.
+No diretório do seu projeto, execute firebase init hosting.
+Selecione o projeto Firebase desejado.
+Indique qual o diretório público (ex: build ou dist, onde ficam os arquivos do seu frontend após o build).
+Configure como um single-page app se for o caso.
+Isso criará os arquivos firebase.json e .firebaserc.
+Configurar firebase.json:
+
+Este arquivo define as regras do hosting.
+
+firebase.json:
+{
+  "hosting": {
+    "public": "build", // Diretório de deploy
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
+
+

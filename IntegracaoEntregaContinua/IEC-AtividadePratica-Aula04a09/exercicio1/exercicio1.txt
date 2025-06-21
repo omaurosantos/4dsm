@@ -1,0 +1,65 @@
+<-- Fluxograma -->
+
+graph TD
+    subgraph "Desenvolvimento Contínuo"
+        D(develop)
+    end
+
+    subgraph "Produção Estável"
+        M(main)
+    end
+
+    subgraph "Novas Funcionalidades"
+        F1(feature/login)
+        F2(feature/dashboard)
+    end
+
+    subgraph "Preparo de Versão"
+        R(release/v1.0)
+    end
+
+    subgraph "Correções Críticas"
+        H(hotfix/bug-critico)
+    end
+
+    M --"Criação"--> D
+    D --"Nova Feature"--> F1
+    F1 --"Concluída"--> D
+    D --"Nova Feature"--> F2
+    F2 --"Concluída"--> D
+    D --"Pronto para Release"--> R
+    R --"Correções"--> R
+    R --"Deploy"--> M
+    R --"Incorporar Correções"--> D
+    M --"Tag v1.0.0"--> M
+    M --"Bug Crítico"--> H
+    H --"Correção"--> M
+    H --"Incorporar Correção"--> D
+
+- Boas Práticas de Commits e Merge Requests
+
+
+    1. Commits Atômicos: Cada commit deve representar uma única mudança lógica. Isso facilita a revisão e a 
+    reversão de alterações se algo der errado.
+    Exemplo Prático: Em vez de um commit "Desenvolvi o dashboard", separe em commits menores:
+
+    - feat: adiciona estrutura inicial do componente de dashboard
+    - feat: implementa serviço para buscar dados do ranking
+    - fix: corrige alinhamento dos cards de jogadores
+    - docs: atualiza documentação do componente de dashboard
+
+    2. Mensagens de Commit Semânticas: Use um padrão como o Conventional Commits. O formato é <tipo>(<escopo>): <assunto>.
+
+    - feat: para novas funcionalidades.
+    - fix: para correção de bugs.
+    - docs: para mudanças na documentação.
+    - style: para formatação de código.
+    - refactor: para refatoração de código sem alteração de funcionalidade.
+    - test: para adição ou correção de testes.
+
+    3. Merge/Pull Requests (PRs):
+
+    - Título e Descrição Claros: O título do PR deve ser conciso e a descrição deve explicar o que foi feito, por que foi feito e como os revisores podem testar.
+    - Manter a Branch Atualizada: Antes de solicitar a mesclagem, atualize sua branch de feature com as últimas alterações da develop para resolver conflitos localmente. Use git pull --rebase origin develop para manter um histórico limpo e linear.
+    - Revisão de Código (Code Review): Exija que pelo menos um outro desenvolvedor revise o PR. Isso melhora a qualidade do código e dissemina o conhecimento.
+    - Verificação de CI: O PR só deve ser mesclado se todas as verificações automatizadas (testes, linting, build) passarem com sucesso.
