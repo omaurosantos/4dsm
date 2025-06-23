@@ -1,4 +1,4 @@
-# Projeto Tempo Agora - Avaliação P3
+# Projeto Tempo Agora - Avaliação P3 (B)
 
 Este é um protótipo de aplicativo móvel desenvolvido como parte da Avaliação Prática P3 da disciplina de Programação de Dispositivos Móveis I do 4º semestre de Desenvolvimento de Software Multiplataforma da Fatec Jacareí.
 
