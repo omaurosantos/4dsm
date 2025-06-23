@@ -44,4 +44,4 @@ Este projeto foi criado com Expo. Para executá-lo, siga os passos abaixo:
 
 Você pode executar este projeto diretamente no seu celular escaneando o QR Code abaixo com o app Expo Go.
 
-**./src/assets/qrcode_expo.png**
+![QR Code para Expo Go](https://raw.githubusercontent.com/omaurosantos/4dsm/main/ProgramacaoParaDispositivosMoveis_I/TempoAgora/src/assets/qrcode_expo.png)
