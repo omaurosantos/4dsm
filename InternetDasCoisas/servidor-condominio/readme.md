@@ -1,29 +1,29 @@
 # Relatório de Projeto P3: Sistema de Controle de Acesso IoT para o Condomínio Residencial Aurora
 
-**Aluno(s):** André Flávio de Oliveira, Mauro do Prado Santos
-**Disciplina:** Internet das Coisas e Aplicações
-**Professor:** Henrique Louro
-**Instituição:** Faculdade de Tecnologia Professor Francisco de Moura - FATEC Jacareí
-**Data:** 25 de junho de 2025
+**Aluno(s):** André Flávio de Oliveira, Mauro do Prado Santos\
+**Disciplina:** Internet das Coisas e Aplicações\
+**Professor:** Henrique Louro\
+**Instituição:** Faculdade de Tecnologia Professor Francisco de Moura - FATEC Jacareí\
+**Data:** 25 de junho de 2025\
 
 ---
 
 ### 1. Descrição Geral da Aplicação
 
-O projeto "Condomínio Residencial Aurora" é um sistema de controle de acesso que utiliza uma placa Arduino Uno como unidade central de processamento. A solução foi aprimorada para se tornar uma aplicação de Internet das Coisas (IoT) completa, com a adição de um módulo Wi-Fi ESP-01. [cite_start]O sistema gerencia o acesso através de duas formas de autenticação: cartões de proximidade, lidos por um módulo RFID RC522 [cite: 13, 16][cite_start], e senhas numéricas inseridas em um teclado sensível ao toque TTP224[cite: 13, 17].
+O projeto "Condomínio Residencial Aurora" é um sistema de controle de acesso que utiliza uma placa Arduino Uno como unidade central de processamento. A solução foi aprimorada para se tornar uma aplicação de Internet das Coisas (IoT) completa, com a adição de um módulo Wi-Fi ESP-01. O sistema gerencia o acesso através de duas formas de autenticação: cartões de proximidade, lidos por um módulo RFID RC522, e senhas numéricas inseridas em um teclado sensível ao toque TTP224.
 
-O Arduino é responsável por ler os sensores, validar as credenciais e, em seguida, transmitir os dados do evento (UID do cartão, data, hora, tipo de acesso e status) via comunicação serial para o módulo ESP-01. O ESP-01, por sua vez, estabelece conexão com uma rede Wi-Fi e envia essas informações para um servidor backend Node.js. Este servidor processa e armazena os registros em um banco de dados PostgreSQL. [cite_start]Para o monitoramento, uma aplicação web com front-end em TypeScript exibe em tempo real o histórico detalhado dos acessos[cite: 13, 18].
+O Arduino é responsável por ler os sensores, validar as credenciais e, em seguida, transmitir os dados do evento (UID do cartão, data, hora, tipo de acesso e status) via comunicação serial para o módulo ESP-01. O ESP-01, por sua vez, estabelece conexão com uma rede Wi-Fi e envia essas informações para um servidor backend Node.js. Este servidor processa e armazena os registros em um banco de dados PostgreSQL. Para o monitoramento, uma aplicação web com front-end em TypeScript exibe em tempo real o histórico detalhado dos acessos.
 
 ### 2. Melhorias Implementadas na Versão 2 (P3)
 
 A evolução do projeto da P2 para a P3 foi focada em adicionar conectividade e criar uma arquitetura de software robusta, transformando o protótipo local em uma solução IoT.
 
 * **Adição de Conectividade Wi-Fi:** A principal melhoria foi a integração de um módulo Wi-Fi ESP-01 ao circuito. O Arduino Uno continua sendo o cérebro da operação, mas agora delega a função de comunicação com a internet ao ESP-01, enviando os dados a serem transmitidos via serial.
-* [cite_start]**Implementação de Arquitetura Web Completa:** O script Python que dependia de uma conexão física com o computador foi substituído por uma solução cliente-servidor muito mais escalável[cite: 43]:
-    * [cite_start]**Backend:** Foi desenvolvido um servidor em Node.js com TypeScript, que expõe uma API para receber os dados do ESP-01 via requisições HTTP e os insere no banco de dados PostgreSQL[cite: 44].
-    * **Frontend:** Foi criada uma interface web (dashboard) com TypeScript, que consome os dados do backend e os exibe em uma tabela, permitindo o monitoramento remoto dos acessos em tempo real.
+* **Implementação de Arquitetura Web Completa:** O script Python que dependia de uma conexão física com o computador foi substituído por uma solução cliente-servidor muito mais escalável.
+* **Backend:** Foi desenvolvido um servidor em Node.js com TypeScript, que expõe uma API para receber os dados do ESP-01 via requisições HTTP e os insere no banco de dados PostgreSQL.
+* **Frontend:** Foi criada uma interface web (dashboard) com TypeScript, que consome os dados do backend e os exibe em uma tabela, permitindo o monitoramento remoto dos acessos em tempo real.
 * **Estrutura de Dados Aprimorada:** O sistema passou a registrar um conjunto mais rico de informações para cada evento, incluindo: ID do registro, UID da tag, data e hora, tipo de acesso (RFID ou senha) e uma mensagem de status (acesso permitido ou negado).
-* [cite_start]**Remoção do Atuador Físico:** O servo motor SG90 foi retirado do projeto[cite: 13, 38]. A remoção permitiu focar os esforços no desenvolvimento da conectividade e na plataforma de software, que são o núcleo desta nova fase do projeto.
+* **Remoção do Atuador Físico:** O servo motor SG90 foi retirado do projeto. A remoção permitiu focar os esforços no desenvolvimento da conectividade e na plataforma de software, que são o núcleo desta nova fase do projeto.
 
 ### 3. Desenho da Arquitetura da Solução
 
@@ -33,11 +33,11 @@ A arquitetura foi reestruturada para refletir a comunicação em etapas: do hard
 
 **Hardware e Periféricos:**
 
-* [cite_start]**Microcontrolador:** Placa Arduino Uno[cite: 13, 23].
+* **Microcontrolador:** Placa Arduino Uno.
 * **Módulo de Conectividade:** Módulo Wi-Fi ESP-01.
-* [cite_start]**Leitor RFID:** Módulo MFRC522 com tags/cartões de 13.56MHz[cite: 13, 23].
-* [cite_start]**Entrada de Senha:** Módulo Sensor Touch Capacitivo TTP224 (4 vias)[cite: 13, 23].
-* [cite_start]**Montagem:** Protoboard e cabos jumpers[cite: 23].
+* **Leitor RFID:** Módulo MFRC522 com tags/cartões de 13.56MHz.
+* **Entrada de Senha:** Módulo Sensor Touch Capacitivo TTP224 (4 vias).
+* **Montagem:** Protoboard e cabos jumpers.
 
 **Software, Pacotes e Plataformas:**
 
@@ -54,7 +54,7 @@ A arquitetura foi reestruturada para refletir a comunicação em etapas: do hard
     * **Linguagem:** TypeScript.
     * **Framework:** React, Angular ou Vue.js.
 * **Banco de Dados:**
-    * [cite_start]**SGBD:** PostgreSQL[cite: 33].
+    * **SGBD:** PostgreSQL.
 
 ### 5. Desenho de Conexão do Circuito de Hardware
 
@@ -90,13 +90,12 @@ As conexões dos módulos à placa Arduino Uno seguem o esquema abaixo, conforme
 | GND                  | GND                 |
 | VCC                  | 5V                  |
 
-*(Fonte das conexões: Imagem "image_3904e2.png" fornecida.)*
 
 ### 6. Repositório do Código Fonte
 
 Todo o código fonte desenvolvido para este projeto, incluindo o firmware do Arduino e os componentes de backend e frontend, está disponível no seguinte repositório do GitHub:
 
-* **URL:** `[INSIRA AQUI O LINK PARA O SEU REPOSITÓRIO NO GITHUB]`
+* **URL:** `https://github.com/omaurosantos/4dsm/tree/main/InternetDasCoisas/servidor-condominio`
 
 ### 7. Manual de Uso
 
@@ -116,5 +115,5 @@ Todo o código fonte desenvolvido para este projeto, incluindo o firmware do Ard
 
 **Exemplo de Tabela de Registros no Dashboard:**
 
-![Exemplo de dashboard com tabela de acessos](https://i.imgur.com/gVnOKp2.png)
+![Exemplo de dashboard com tabela de acessos](./condominio_residencial_aurora.jpeg)
 *Figura 1: Tela principal do dashboard, exibindo o histórico de acessos com detalhes sobre UID, data, tipo e status.*
