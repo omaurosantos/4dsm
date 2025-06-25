@@ -53,7 +53,7 @@ A arquitetura foi reestruturada para refletir a comunicação em etapas: do hard
     * **Driver Banco de Dados:** `pg` (node-postgres).
 * **Frontend:**
     * **Linguagem:** TypeScript.
-    * **Framework:** React, Angular ou Vue.js.
+    * **Framework:** React
 * **Banco de Dados:**
     * **SGBD:** PostgreSQL.
 
