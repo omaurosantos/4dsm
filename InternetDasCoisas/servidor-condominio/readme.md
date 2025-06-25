@@ -4,7 +4,7 @@
 **Disciplina:** Internet das Coisas e Aplicações\
 **Professor:** Henrique Louro\
 **Instituição:** Faculdade de Tecnologia Professor Francisco de Moura - FATEC Jacareí\
-**Data:** 25 de junho de 2025\
+**Data:** 25 de junho de 2025
 
 ---
 
@@ -27,7 +27,8 @@ A evolução do projeto da P2 para a P3 foi focada em adicionar conectividade e 
 
 ### 3. Desenho da Arquitetura da Solução
 
-A arquitetura foi reestruturada para refletir a comunicação em etapas: do hardware para a nuvem e, finalmente, para o usuário.
+A arquitetura foi reestruturada para refletir a comunicação em etapas: do hardware para a nuvem e, finalmente, para o usuário:
+![Arquitetura RFID](./arquitetura_rfid.png)
 
 ### 4. Relação de Material e Software
 
@@ -110,8 +111,6 @@ Todo o código fonte desenvolvido para este projeto, incluindo o firmware do Ard
 2.  **Visualizar os Registros:** A tela principal exibirá a lista de todos os eventos de acesso, contendo ID, UID (quando aplicável), data e hora, tipo de acesso e o status (permitido ou negado).
 
 ### 8. Telas de Visualização do Sistema
-
-*(Substitua as imagens abaixo por capturas de tela reais da sua aplicação.)*
 
 **Exemplo de Tabela de Registros no Dashboard:**
 
