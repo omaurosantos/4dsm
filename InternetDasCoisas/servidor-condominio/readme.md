@@ -2,7 +2,7 @@
 
 **Aluno(s):** André Flávio de Oliveira, Mauro do Prado Santos\
 **Disciplina:** Internet das Coisas e Aplicações\
-**Professor:** Henrique Louro\
+**Professor:** Henrique Louro e Leandro Toss Hoffmann\
 **Instituição:** Faculdade de Tecnologia Professor Francisco de Moura - FATEC Jacareí\
 **Data:** 25 de junho de 2025
 
